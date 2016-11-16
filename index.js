@@ -27,7 +27,7 @@ button.onclick = function() {
 
     changeDue = Math.round(changeDue * 100) / 100;
 
-    var message = 'your change is ' + '$' + changeDue + '!';
+    var message = 'Your change is ' + '$' + changeDue + '!';
 
     var output = document.getElementById('output');
 
