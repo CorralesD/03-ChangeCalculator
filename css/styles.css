@@ -1,0 +1,23 @@
+.input, #output {
+	text-align: center;
+}
+
+body {
+	background-image: url(../images/ombre.jpg);
+}
+
+.buttonHolder {
+	margin-top: 100px;
+}
+
+#output {
+height: 200px;
+width: 200px;
+background-image: url(../images/red-gradient.jpg);
+color: white;
+font-size: 40px;
+margin: 30px auto 40px auto;
+border: 5px solid;
+border-color: white;
+border-radius: 100%;
+}

@@ -25,17 +25,14 @@ button.onclick = function() {
 
     var changeDue = (amountGiven.value - cost.value);
 
-    changeDue = Math.round(changeDue * 100) / 100;
+    changeDue = (Math.round(changeDue * 100) / 100).toFixed(2);
 
     var message = 'Your change is ' + '$' + changeDue + '!';
 
     var output = document.getElementById('output');
 
     output.innerHTML = "<div class='animated zoomIn'>" + message + "</div>";
-
-    // debugger;
-
-// 
+ 
 
     for(var i = 0; i < currencies.length; i++) {
 

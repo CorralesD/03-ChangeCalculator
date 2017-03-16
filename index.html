@@ -2,61 +2,72 @@
 <html>
 
 <head>
-	<title>Change Calculator</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" href="animate.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-	
-
+    <title>Change Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 </head>
-<div class="container-fluid">
-
-<h1 class="topRow"> Change Calculator! </h1>
-	<h4 class="input coll-lg-1"> 
-		How much is due for the sale? 
-		<input id="totalAmountOfTheSale" type="text" name="Total Amount of the Sale">
-		
-	</h4>
-	<h4 class="input coll-lg-1"> 
-		How much has the customer given you?
-		<input id="amountTenderedByTheCustomer" type="text" name="The amount tendered by the customer">
-	</h4>
-	<div class="buttonHolder">
-		<button id="calculateChange">Calculate</button>
-	</div>
 
 <body>
-	<header>
-		<h2> Dollars </h2>
-		<p id='output'></p>
-	</header>
-    <h5 class="coll-lg-1">Hundred(s) : <h3 id="hundreds"></h3>
-    </h5>
-    <h5 class="coll-lg-1">Fiftie(s) : <h3 id="fifties"></h3>
-    </h5>
-    <h5 class="coll-lg-1">Twentie(s) : <h3 id="twenties"></h3>
-    </h5>
-    <h5 class="coll-lg-1">Ten(s) : <h3 id="tens"></h3>
-    </h5>
-    <h5 class="coll-lg-1">Five(s) : <h3 id="fives"></h3>
-    </h5>
-    <h5 class="coll-lg-1">One(s) : <h3 id="ones"></h3>
-    </h5>
-    <h5 class="coll-lg-1">Quarter(s) : <h3 id="quarters"></h3>
-    </h5>
-    <h5 class="coll-lg-1">Dime(s) : <h3 id="dimes"></h3>
-    </h5>
-    <h5 class="coll-lg-1">Nickel(s) : <h3 id="nickels"></h3>
-    </h5>
-    <h5 class="coll-lg-1">Pennie(s) : <h3 id="pennies"></h3>
-    </h5>
- </div>
-	
-<script src="index.js"></script>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+    <div class="container">
+        <div class="well text-center">
+            <h1> Change Calculator! </h1>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+            	<div> 
+            		<input id="totalAmountOfTheSale" class="form-control input-lg" type="text" placeholder="Amount due for sale.">
+                </div>
+            </div>
+            <div class="col-sm-6">
+            	<div> 
+            		<input id="amountTenderedByTheCustomer" class="form-control input-lg" type="text" placeholder="Amount given.">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="buttonHolder col-md-8">
+                <button type="button" class="btn btn-primary btn-lg btn-block" id="calculateChange">Calculate</button>
+            </div>
+            <div class="col-md-4">
+                <p id='output'></p>
+            </div>
+        </div>
+        <div class="table-responsive">
+  			<table class="table table-inverse">
+  				<thead>
+  					<tr>
+  						<th>Hundred(s):</th>
+  						<th>Fiftie(s):</th>
+  						<th>Twentie(s):</th>
+  						<th>Ten(s):</th>
+  						<th>Five(s):</th>
+  						<th>One(s):</th>
+  						<th>Quarter(s):</th>
+  						<th>Dime(s):</th>
+  						<th>Nickel(s):</th>
+  						<th>Pennie(s):</th>
+	            	</tr>
+	            </thead>
+	            <tbody>
+	            	<td id="hundreds"></td>
+	            	<td id="fifties"></td>
+					<td id="twenties"></td>
+					<td id="tens"></td>
+					<td id="fives"></td>
+					<td id="ones"></td>
+					<td id="quarters"></td>
+					<td id="dimes"></td>
+					<td id="nickels"></td>
+	            	<td id="pennies"></td>
+	            </tbody>
+        	</table>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
-	
 
 </html>
